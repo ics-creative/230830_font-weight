@@ -1,0 +1,22 @@
+{
+  "name": "font-weight",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prettier": "prettier \"**/*.{css,scss,ts,js,vue,html}\" --write"
+  },
+  "dependencies": {
+    "vue": "3.3.4",
+    "vuetify": "3.3.12"
+  },
+  "devDependencies": {
+    "@mdi/js": "7.2.96",
+    "@vitejs/plugin-vue": "4.2.3",
+    "dotenv": "16.3.1",
+    "prettier": "3.0.1",
+    "sass": "1.64.2",
+    "vite": "4.4.5"
+  }
+}
