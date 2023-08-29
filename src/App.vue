@@ -11,7 +11,7 @@ const importWeights = computed(() => {
   return selected.value.sort().join(";");
 });
 
-const antialias = ref("off");
+const antialias = ref("on");
 </script>
 <template>
   <div>
@@ -78,14 +78,17 @@ const antialias = ref("off");
       <v-col>
         <v-row>
           <v-card text="ウェイト normal" width="100%" class="mb-1">
-            <p :class="`weight-normal text antialias-${antialias}`">
+            <p
+              :class="`text antialias-${antialias}`"
+              style="font-weight: normal"
+            >
               {{ inputText }}
             </p>
           </v-card>
         </v-row>
         <v-row>
           <v-card text="ウェイト bold" width="100%" class="mb-12">
-            <p :class="`weight-bold text antialias-${antialias}`">
+            <p :class="`text antialias-${antialias}`" style="font-weight: bold">
               {{ inputText }}
             </p>
           </v-card>
@@ -109,13 +112,6 @@ const antialias = ref("off");
   }
 }
 
-.weight-normal {
-  font-weight: normal;
-}
-
-.weight-bold {
-  font-weight: bold;
-}
 #app {
   p.text {
     padding: 0 1rem 1rem;
